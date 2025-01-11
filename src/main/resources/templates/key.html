@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="uBase::layout(~{::section})">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home Page</title>
+</head>
+
+<body>
+	<section>
+		<div style="text-align: center;">
+		Your Key: <span th:text="${key}"></span>
+		</div>
+		<script src="/JS/apiscript.js"></script>
+		<link rel="stylesheet" th:href="@{/style.css}">
+	</section>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="uBase::layout(~{::section})">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home Page</title>
+</head>
+
+<body>
+	<section>
+		<div style="text-align: center;">
+			<h1>Congratulations!</h1>
+			<h1 th:text="${session.loggedusername}"></h1>
+		</div>
+		<div style="text-align: center;">
+
+		<button type="button" class="btn btn-primary"> <a class="nav-link" th:href="@{/user/setPremium/starter}" href="#">Home</button>
+		</div>
+	</section>
+</body>
+
+</html>

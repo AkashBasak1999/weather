@@ -1,0 +1,23 @@
+Payment Integration:
+
+to make the payment we are not gonna write the payment logic. payment logics are written in the banking apps.
+we are just gonna use a payment gateway that can be (Stripe)
+in the payment gateway all the logics are written and from our website, client will fill their details. all the details will be sent to the payment gateway it will fill those fields and makes the payment done.
+
+ 
+create an account in stripe.
+1.from the developer portal copy the publishable key and secret key and use it in the code
+2.add the stripe depenedency in the pom.xml
+ 		<dependency>
+ 			<groupId>com.stripe</groupId>
+ 			<artifactId>stripe-java</artifactId>
+ 			<version>28.2.0</version>
+ 		</dependency>
+
+stirpe needs 4 parameters to connect withe the gateway
+productName,amount,quantity,currency
+so create a class ProductRequest with these 4 fields
+
+once strip make the payment it returns the session Id, checkout URL
+so create StripeResponse class with the below mentioned fields
+status, message, sessionId, sessionUrl;

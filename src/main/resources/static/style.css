@@ -24,6 +24,7 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .spa{
 	display: none;
 }
@@ -32,4 +33,15 @@
 }
 .hold{	
 }
+
+.nodisp{
+	display: none;
+}
+.disp{
+	display: block;
+}
+
+
+
+
 

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div style="text-align: center;">
+		<h1 th:text="${JSON}"></h1>
+		
+		<button type="button" class="btn btn-outline-success"> <a class="nav-link" th:href="@{/user/pricing}" href="#">See Plans</button>
+	</div>
+</body>
+
+</html>
